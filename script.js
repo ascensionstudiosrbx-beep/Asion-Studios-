@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const isOpen = sidebar.classList.toggle('is-open');
         overlay.classList.toggle('is-visible', isOpen);
-        
+
         // Bloqueia o scroll do corpo da página quando o menu está aberto
         document.body.style.overflow = isOpen ? 'hidden' : '';
     }
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Lógica do Acordeão (Accordion - Usado em Aprendizado e Index) ---
     // Esta função é chamada diretamente pelo atributo 'onclick' no HTML
-    window.toggleAccordion = function(headerElement) {
+    window.toggleAccordion = function (headerElement) {
         const content = headerElement.nextElementSibling;
         const icon = headerElement.querySelector('.fas.fa-chevron-down');
 
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // --- Lógica de Filtragem de Jogos (Usado apenas em jogos.html) ---
-    window.filterGames = function(tag) {
+    window.filterGames = function (tag) {
         const gameCards = document.querySelectorAll('.gh-game-card');
         const tagsList = document.querySelectorAll('.gh-tag');
         const clickedTag = event.target; // O elemento que foi clicado
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     };
-    
+
     // Define o ano atual via JavaScript no navegador do usuário
     document.getElementById("year").textContent = new Date().getFullYear();
 });

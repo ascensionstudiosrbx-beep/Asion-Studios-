@@ -56,33 +56,36 @@
 
     <main class="gh-main-content">
 
-        <section class="gh-section gh-section--light">
-            <h1 class="gh-heading">Nossos Jogos</h1>
-            <p class="gh-section__intro">Todos os jogos abaixo foram desenvolvidos pelos nossos Devs da Ascencion
-                Studios, muitos começando do zero absoluto!.</p>
+        <section class="gh-hero">
+            <div class="gh-hero__content">
+                <h1 class="gh-heading gh-hero__title">Nossos <span class="gh-text-gradient">Jogos.</span></h1>
+                <p class="gh-hero__subtitle"> Todos os jogos abaixo foram desenvolvidos pelos nossos Devs da Ascencion
+                    Studios, muitos começando do zero absoluto!.</p>
 
-            <div class="gh-banner"
-                style="background-image: url('https://placehold.co/1200x400/2a1a5e/FFFFFF/png?text=Publique+Seu+Jogo'); height: 250px; min-height: auto; margin-bottom: 30px;">
-                <div class="gh-banner__content" style="background: rgba(20, 20, 36, 0.85);">
-                    <h2 class="gh-banner__title" style="font-size: 2rem;"><i class="fas fa-cloud-upload-alt"
-                            style="color: var(--color-secondary);"></i> Da Ideia à Steam</h2>
-                    <p class="gh-banner__subtitle" style="margin-bottom: 15px;">Não apenas ensinamos a fazer; ensinamos
-                        a lançar. Oferecemos suporte para publicação no Itch.io, Steam e Google Play.</p>
-                    <a href="#" class="gh-button gh-button--secondary">Como Submeter Meu Projeto</a>
+                <div class="gh-center-content" style="margin-bottom: 40px;">
+                    <p style="margin-bottom: 15px; font-weight: 600; color: var(--color-text-muted);">Filtrar por
+                        Categoria:
+                    </p>
+                    <div class="gh-tags"
+                        style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; max-width: 800px;">
+                        <span class="gh-tag gh-tag--active" onclick="filterGames('all')">Todos os Jogos</span>
+
+                        <span class="gh-tag" onclick="filterGames('acao')">Ação / Combate</span>
+
+                        <span class="gh-tag"
+                            style="border-color: var(--color-secondary); color: var(--color-secondary);"
+                            onclick="filterGames('desenvolvimento')">Em Desenvolvimento (Beta)</span>
+                    </div>
                 </div>
-            </div>
 
-            <div class="gh-center-content" style="margin-bottom: 40px;">
-                <p style="margin-bottom: 15px; font-weight: 600; color: var(--color-text-muted);">Filtrar por Categoria:
-                </p>
-                <div class="gh-tags"
-                    style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; max-width: 800px;">
-                    <span class="gh-tag gh-tag--active" onclick="filterGames('all')">Todos os Jogos</span>
-
-                    <span class="gh-tag" onclick="filterGames('acao')">Ação / Combate</span>
-
-                    <span class="gh-tag" style="border-color: var(--color-secondary); color: var(--color-secondary);"
-                        onclick="filterGames('desenvolvimento')">Em Desenvolvimento (Beta)</span>
+                <div class="gh-banner "
+                    style="height: 250px; min-height: auto; margin-bottom: -70px;">
+                    <div class="gh-banner__content" style="background: rgba(20, 20, 36, 0.85);">
+                        <h2 class="gh-banner__title" style="font-size: 2rem;"><i class="fas fa-cloud-upload-alt"
+                                style="color: var(--color-secondary);"></i> Encontrou um Bug?</h2>
+                        <p class="gh-banner__subtitle" style="margin-bottom: 15px;">Entre no nosso Servidor do Discord caso tenha encontrado um Bug, ou se tiver uma Ideia/Feedback sobre nossos Projetos.</p>
+                        <a href="https://discord.com/channels/1443773820145238119/1444055147276927058" class="gh-button gh-button--secondary">Entrar</a>
+                    </div>
                 </div>
             </div>
         </section>
