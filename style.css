@@ -4,26 +4,37 @@
 
 :root {
     /* Cores de Fundo Profundas (Roxo/Azul Noturno) */
-    --color-bg-main: #141424;   /* Fundo Principal (Azul/Roxo Profundo) */
-    --color-bg-secondary: #1F1F35; /* Fundo Secundário/Cards (Mais claro) */
-    --color-border: #2F2F4F;    /* Bordas sutis */
+    --color-bg-main: #141424;
+    /* Fundo Principal (Azul/Roxo Profundo) */
+    --color-bg-secondary: #1F1F35;
+    /* Fundo Secundário/Cards (Mais claro) */
+    --color-border: #2F2F4F;
+    /* Bordas sutis */
 
     /* Cores de Destaque Vibrantes */
-    --color-primary: #7F5AF0;   /* Roxo Ametista Vibrante (Ação Principal) */
-    --color-primary-dark: #583CB5; /* Roxo mais escuro para hover */
-    --color-secondary: #2CB67D; /* Verde Esmeralda (Ações Secundárias/Sucesso) */
-    --color-accent: #FFC107;    /* Amarelo Dourado (Destaques/Alertas) */
-    
+    --color-primary: #7F5AF0;
+    /* Roxo Ametista Vibrante (Ação Principal) */
+    --color-primary-dark: #583CB5;
+    /* Roxo mais escuro para hover */
+    --color-secondary: #2CB67D;
+    /* Verde Esmeralda (Ações Secundárias/Sucesso) */
+    --color-accent: #FFC107;
+    /* Amarelo Dourado (Destaques/Alertas) */
+
     /* Texto */
-    --color-text-vibrant: #FFFFFF; /* Branco Puro para Títulos */
-    --color-text-light: #EAEAEF;   /* Texto Principal Claro */
-    --color-text-muted: #A0A0B8;   /* Texto Secundário Acinzentado */
-    
+    --color-text-vibrant: #FFFFFF;
+    /* Branco Puro para Títulos */
+    --color-text-light: #EAEAEF;
+    /* Texto Principal Claro */
+    --color-text-muted: #A0A0B8;
+    /* Texto Secundário Acinzentado */
+
     /* Outros */
     --border-radius-large: 12px;
     --transition-speed: 0.3s;
-    --shadow-soft: 0 8px 25px rgba(0, 0, 0, 0.5); 
-    --shadow-hover: 0 12px 35px rgba(127, 90, 240, 0.4); /* Sombra colorida no hover */
+    --shadow-soft: 0 8px 25px rgba(0, 0, 0, 0.5);
+    --shadow-hover: 0 12px 35px rgba(127, 90, 240, 0.4);
+    /* Sombra colorida no hover */
     --sidebar-width: 300px;
 }
 
@@ -34,14 +45,18 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Roboto', sans-serif;
     background-color: var(--color-bg-main);
     color: var(--color-text-light);
-    line-height: 1.7; /* Aumentei ligeiramente para melhor leitura dos textos longos */
+    line-height: 1.7;
+    /* Aumentei ligeiramente para melhor leitura dos textos longos */
     scroll-behavior: smooth;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Inter', sans-serif;
     color: var(--color-text-vibrant);
 }
@@ -65,7 +80,8 @@ a:hover {
 .gh-main-content {
     max-width: 1200px;
     margin: 0 auto;
-    padding-top: 110px; /* Ajuste para o header de duas linhas no desktop */
+    padding-top: 110px;
+    /* Ajuste para o header de duas linhas no desktop */
     min-height: 80vh;
 }
 
@@ -76,13 +92,14 @@ a:hover {
     justify-content: center;
 }
 
-.gh-section { 
-    padding: 80px 20px; /* Mais espaçamento nas seções */
-    text-align: center; 
+.gh-section {
+    padding: 80px 20px;
+    /* Mais espaçamento nas seções */
+    text-align: center;
 }
 
-.gh-section--light { 
-    background-color: var(--color-bg-secondary); 
+.gh-section--light {
+    background-color: var(--color-bg-secondary);
     border-top: 1px solid var(--color-border);
     border-bottom: 1px solid var(--color-border);
 }
@@ -183,11 +200,14 @@ a:hover {
 
 /* Botões de Redes Sociais Específicos */
 .gh-button--discord {
-    background-color: #5865F2; /* Cor oficial do Discord */
+    background-color: #5865F2;
+    /* Cor oficial do Discord */
     color: white !important;
 }
+
 .gh-button--youtube {
-    background-color: #FF0000; /* Cor oficial do YouTube */
+    background-color: #FF0000;
+    /* Cor oficial do YouTube */
     color: white !important;
 }
 
@@ -209,7 +229,8 @@ a:hover {
 /* TAGS */
 .gh-tag {
     display: inline-block;
-    background-color: rgba(127, 90, 240, 0.1); /* Fundo roxo transparente */
+    background-color: rgba(127, 90, 240, 0.1);
+    /* Fundo roxo transparente */
     color: var(--color-primary);
     padding: 6px 14px;
     border-radius: 50px;
@@ -220,7 +241,8 @@ a:hover {
     font-weight: 600;
 }
 
-.gh-tag--active, .gh-tag:hover {
+.gh-tag--active,
+.gh-tag:hover {
     background-color: var(--color-primary);
     color: var(--color-text-vibrant);
     cursor: pointer;
@@ -232,19 +254,21 @@ a:hover {
 /* -------------------------------------- */
 
 .gh-header {
-    background-color: rgba(20, 20, 36, 0.95); /* Fundo semi-transparente */
+    background-color: rgba(20, 20, 36, 0.95);
+    /* Fundo semi-transparente */
     backdrop-filter: blur(10px);
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
     border-bottom: 1px solid var(--color-border);
-    
+
     /* Configuração inicial para Mobile (Flexbox) */
-    display: flex; 
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70px; /* Altura do header mobile */
+    height: 70px;
+    /* Altura do header mobile */
     padding: 0 20px;
 }
 
@@ -268,13 +292,15 @@ a:hover {
     -webkit-text-fill-color: transparent;
     text-align: center;
     padding-bottom: 5px;
-    display: none; /* Esconder por padrão no mobile */
+    display: none;
+    /* Esconder por padrão no mobile */
     letter-spacing: 1px;
 }
 
 /* NAVEGAÇÃO DESKTOP (A linha dos links) */
 .gh-nav--desktop {
-    display: none; /* Esconder por padrão no mobile */
+    display: none;
+    /* Esconder por padrão no mobile */
     width: 100%;
     text-align: center;
     margin-top: 5px;
@@ -328,7 +354,8 @@ a:hover {
     font-size: 1.5rem;
     font-weight: 800;
     color: var(--color-primary);
-    z-index: 1101; /* Fica acima do overlay */
+    z-index: 1101;
+    /* Fica acima do overlay */
 }
 
 /* TOGGLE MOBILE (Botão Hamburguer) */
@@ -346,20 +373,25 @@ a:hover {
 .gh-sidebar {
     position: fixed;
     top: 0;
-    left: 0; /* Fixado na esquerda */
+    left: 0;
+    /* Fixado na esquerda */
     width: var(--sidebar-width);
     height: 100%;
-    background-color: var(--color-bg-main); 
-    box-shadow: 5px 0 25px rgba(0, 0, 0, 0.8); /* Sombra para a direita */
+    background-color: var(--color-bg-main);
+    box-shadow: 5px 0 25px rgba(0, 0, 0, 0.8);
+    /* Sombra para a direita */
     z-index: 1100;
-    transform: translateX(-100%); /* Começa escondido para a esquerda */
-    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1); /* Animação mais suave */
+    transform: translateX(-100%);
+    /* Começa escondido para a esquerda */
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    /* Animação mais suave */
     padding: 0;
     border-right: 1px solid var(--color-border);
 }
 
-.gh-sidebar.is-open { 
-    transform: translateX(0); /* Desliza para a vista */
+.gh-sidebar.is-open {
+    transform: translateX(0);
+    /* Desliza para a vista */
 }
 
 .gh-sidebar__header {
@@ -379,14 +411,20 @@ a:hover {
     cursor: pointer;
     transition: color var(--transition-speed);
 }
-.gh-sidebar__close:hover { color: var(--color-accent); }
 
-.gh-sidebar__list { list-style: none; padding: 20px 0; }
+.gh-sidebar__close:hover {
+    color: var(--color-accent);
+}
+
+.gh-sidebar__list {
+    list-style: none;
+    padding: 20px 0;
+}
 
 .gh-sidebar__link {
     display: flex;
     align-items: center;
-    padding: 15px 25px; 
+    padding: 15px 25px;
     color: var(--color-text-light);
     font-size: 1.1rem;
     font-weight: 600;
@@ -394,18 +432,24 @@ a:hover {
     border-left: 4px solid transparent;
 }
 
-.gh-sidebar__link:hover, .gh-sidebar__link.gh-nav__active-link {
+.gh-sidebar__link:hover,
+.gh-sidebar__link.gh-nav__active-link {
     background-color: rgba(127, 90, 240, 0.1);
     color: var(--color-primary);
     border-left-color: var(--color-primary);
 }
-.gh-sidebar__link .fas, .gh-sidebar__link .fab { 
-    margin-right: 15px; 
+
+.gh-sidebar__link .fas,
+.gh-sidebar__link .fab {
+    margin-right: 15px;
     width: 25px;
     text-align: center;
     font-size: 1.2rem;
 }
-.gh-sidebar__cta { padding: 20px 25px; }
+
+.gh-sidebar__cta {
+    padding: 20px 25px;
+}
 
 .gh-overlay {
     position: fixed;
@@ -420,6 +464,7 @@ a:hover {
     transition: opacity 0.4s ease-in-out;
     backdrop-filter: blur(3px);
 }
+
 .gh-overlay.is-visible {
     opacity: 1;
     visibility: visible;
@@ -453,9 +498,20 @@ a:hover {
 }
 
 @keyframes pulse {
-    0% { transform: scale(1); opacity: 0.5; }
-    50% { transform: scale(1.2); opacity: 0.8; }
-    100% { transform: scale(1); opacity: 0.5; }
+    0% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
 }
 
 
@@ -497,8 +553,14 @@ a:hover {
     gap: 40px;
     margin-top: 40px;
 }
-.gh-card-grid--3-cols { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
-.gh-card-grid--4-cols { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+
+.gh-card-grid--3-cols {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.gh-card-grid--4-cols {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
 
 /* CARD DE JOGO (Visual mais limpo e vibrante) */
 .gh-game-card {
@@ -517,13 +579,14 @@ a:hover {
 .gh-game-card:hover {
     transform: translateY(-10px);
     box-shadow: var(--shadow-hover);
-    border-color: var(--color-primary); 
+    border-color: var(--color-primary);
 }
 
 .gh-game-card__media {
     width: 100%;
     height: 220px;
-    background-color: #2a2a40; /* Placeholder cor sólida */
+    background-color: #2a2a40;
+    /* Placeholder cor sólida */
     background-size: cover;
     background-position: center;
     position: relative;
@@ -540,23 +603,26 @@ a:hover {
     background: linear-gradient(to top, var(--color-bg-secondary), transparent);
 }
 
-.gh-game-card__body { 
-    padding: 25px; 
+.gh-game-card__body {
+    padding: 25px;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
 }
-.gh-game-card__title { 
-    color: var(--color-text-vibrant); 
-    margin-bottom: 0.8rem; 
+
+.gh-game-card__title {
+    color: var(--color-text-vibrant);
+    margin-bottom: 0.8rem;
     font-size: 1.4rem;
 }
-.gh-game-card__description { 
-    color: var(--color-text-muted); 
-    font-size: 1rem; 
+
+.gh-game-card__description {
+    color: var(--color-text-muted);
+    font-size: 1rem;
     margin-bottom: 20px;
-    flex-grow: 1; 
+    flex-grow: 1;
 }
+
 .gh-game-card__footer {
     margin-top: auto;
 }
@@ -568,11 +634,12 @@ a:hover {
     padding: 30px;
     border-radius: var(--border-radius-large);
     border: 1px solid var(--color-border);
-    border-top: 4px solid var(--color-primary); /* Topo colorido */
+    border-top: 4px solid var(--color-primary);
+    /* Topo colorido */
     box-shadow: var(--shadow-soft);
     transition: all var(--transition-speed);
     text-align: left;
-    height: 100%; 
+    height: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -580,7 +647,7 @@ a:hover {
 .gh-topic-card:hover {
     transform: translateY(-10px);
     box-shadow: var(--shadow-hover);
-    border-color: var(--color-primary); 
+    border-color: var(--color-primary);
     background-color: #23233b;
 }
 
@@ -625,18 +692,20 @@ a:hover {
 /* -------------------------------------- */
 
 /* ACORDEÃO (Estilo mais limpo e moderno) */
-.gh-accordion { 
-    max-width: 900px; 
-    margin: 40px auto; 
-    text-align: left; 
+.gh-accordion {
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: left;
 }
-.gh-accordion__item { 
-    margin-bottom: 15px; 
-    border-radius: var(--border-radius-large); 
-    overflow: hidden; 
+
+.gh-accordion__item {
+    margin-bottom: 15px;
+    border-radius: var(--border-radius-large);
+    overflow: hidden;
     border: 1px solid var(--color-border);
     background-color: var(--color-bg-secondary);
 }
+
 .gh-accordion__header {
     padding: 20px 25px;
     cursor: pointer;
@@ -648,39 +717,52 @@ a:hover {
     color: var(--color-text-vibrant);
     transition: background-color var(--transition-speed);
 }
-.gh-accordion__header:hover { 
-    background-color: rgba(127, 90, 240, 0.05); 
+
+.gh-accordion__header:hover {
+    background-color: rgba(127, 90, 240, 0.05);
 }
+
 .gh-accordion__header .fas {
     color: var(--color-primary);
     transition: transform 0.4s ease;
     font-size: 0.9rem;
 }
+
 .gh-accordion__content {
-    background-color: rgba(20, 20, 36, 0.5); /* Fundo ligeiramente mais escuro interno */
+    background-color: rgba(20, 20, 36, 0.5);
+    /* Fundo ligeiramente mais escuro interno */
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.5s cubic-bezier(0, 1, 0, 1); /* Animação suave "ease-out" */
+    transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+    /* Animação suave "ease-out" */
 }
+
 .gh-accordion__body {
     padding: 25px;
     color: var(--color-text-light);
     line-height: 1.8;
 }
+
 .gh-accordion__body h4 {
     color: var(--color-primary);
     margin-bottom: 10px;
     margin-top: 20px;
 }
-.gh-accordion__body h4:first-child { margin-top: 0; }
 
-.accordion-icon-rotated { transform: rotate(180deg); }
+.gh-accordion__body h4:first-child {
+    margin-top: 0;
+}
+
+.accordion-icon-rotated {
+    transform: rotate(180deg);
+}
 
 
 /* BANNER DE DESTAQUE VIBRANTE */
 .gh-banner {
     width: 100%;
-    min-height: 400px; /* Altura maior */
+    min-height: 400px;
+    /* Altura maior */
     background-color: var(--color-bg-secondary);
     background-size: cover;
     background-position: center;
@@ -742,13 +824,16 @@ a:hover {
 /* TIMELINE (SOBRE) - Estilo Roxo/Verde */
 .gh-timeline-item {
     text-align: left;
-    border-left: 3px solid var(--color-primary); /* Linha roxa */
+    border-left: 3px solid var(--color-primary);
+    /* Linha roxa */
     padding-left: 25px;
     padding-bottom: 40px;
     position: relative;
 }
 
-.gh-timeline-item:last-child { border-left-color: transparent; }
+.gh-timeline-item:last-child {
+    border-left-color: transparent;
+}
 
 .gh-timeline-item::before {
     content: '';
@@ -757,19 +842,22 @@ a:hover {
     top: 0;
     width: 19px;
     height: 19px;
-    background-color: var(--color-secondary); /* Bolinha verde */
+    background-color: var(--color-secondary);
+    /* Bolinha verde */
     border-radius: 50%;
     border: 4px solid var(--color-bg-secondary);
     box-shadow: 0 0 10px rgba(44, 182, 125, 0.5);
 }
 
 .gh-timeline-year {
-    color: var(--color-secondary); /* Ano em verde */
+    color: var(--color-secondary);
+    /* Ano em verde */
     font-weight: 800;
     font-size: 1.4rem;
     margin-bottom: 10px;
     display: block;
 }
+
 .gh-timeline-item h3 {
     font-size: 1.2rem;
     margin-bottom: 10px;
@@ -787,6 +875,7 @@ a:hover {
     border-top: 1px solid var(--color-border);
     color: var(--color-text-muted);
 }
+
 .gh-footer__content {
     max-width: 1200px;
     margin: 0 auto 30px;
@@ -795,12 +884,34 @@ a:hover {
     flex-wrap: wrap;
     gap: 20px;
 }
-.gh-footer__col { text-align: left; min-width: 200px; }
-.gh-footer__col h4 { color: var(--color-text-vibrant); margin-bottom: 15px; }
-.gh-footer__col ul { list-style: none; }
-.gh-footer__col li { margin-bottom: 10px; }
-.gh-footer__col a { color: var(--color-text-muted); font-weight: 400; }
-.gh-footer__col a:hover { color: var(--color-primary); }
+
+.gh-footer__col {
+    text-align: left;
+    min-width: 200px;
+}
+
+.gh-footer__col h4 {
+    color: var(--color-text-vibrant);
+    margin-bottom: 15px;
+}
+
+.gh-footer__col ul {
+    list-style: none;
+}
+
+.gh-footer__col li {
+    margin-bottom: 10px;
+}
+
+.gh-footer__col a {
+    color: var(--color-text-muted);
+    font-weight: 400;
+}
+
+.gh-footer__col a:hover {
+    color: var(--color-primary);
+}
+
 .gh-footer__bottom {
     border-top: 1px solid var(--color-border);
     padding-top: 20px;
@@ -809,12 +920,14 @@ a:hover {
 
 
 @media (min-width: 993px) {
+
     /* Desktop: Header de duas linhas */
     .gh-header {
-        height: auto; 
-        display: block; 
+        height: auto;
+        display: block;
         padding: 0;
-        background-color: var(--color-bg-main); /* Fundo sólido no desktop */
+        background-color: var(--color-bg-main);
+        /* Fundo sólido no desktop */
     }
 
     .gh-header-container {
@@ -822,35 +935,42 @@ a:hover {
     }
 
     .gh-logo--desktop {
-        display: inline-block; 
+        display: inline-block;
     }
 
     .gh-logo--mobile,
     .gh-nav__toggle {
-        display: none; /* Esconde mobile */
+        display: none;
+        /* Esconde mobile */
     }
 
     .gh-nav--desktop {
-        display: block; /* Mostra nav desktop */
+        display: block;
+        /* Mostra nav desktop */
     }
 }
 
 @media (max-width: 992px) {
+
     /* Mobile: Header flex padrão */
-    .gh-main-content { padding-top: 80px; }
-    
+    .gh-main-content {
+        padding-top: 80px;
+    }
+
     .gh-header {
         height: 70px;
         padding: 0 20px;
         /* O container interno já é flex row */
     }
-    
+
     .gh-header-container {
-        flex-direction: row; /* Garante linha horizontal */
-        justify-content: space-between; /* Espaça logo e toggle */
+        flex-direction: row;
+        /* Garante linha horizontal */
+        justify-content: space-between;
+        /* Espaça logo e toggle */
         padding: 0;
     }
-    
+
     /* Logo na esquerda */
     .gh-logo--mobile {
         display: flex;
@@ -858,33 +978,63 @@ a:hover {
         font-size: 1.4rem;
         color: var(--color-text-vibrant);
     }
-    .gh-logo--mobile i { color: var(--color-primary); margin-right: 10px; }
-    
+
+    .gh-logo--mobile i {
+        color: var(--color-primary);
+        margin-right: 10px;
+    }
+
     /* Toggle na direita */
     .gh-nav__toggle {
-        display: block; 
+        display: block;
     }
-    
+
     .gh-nav--desktop,
     .gh-logo--desktop {
         display: none;
     }
 
     /* Ajustes de tipografia e espaçamento para mobile */
-    .gh-hero { padding: 80px 20px 100px; }
-    .gh-hero__title { font-size: 2.2rem; }
-    .gh-hero__subtitle { font-size: 1.2rem; }
-    .gh-heading { font-size: 2rem; }
-    .gh-section { padding: 50px 20px; }
-    
-    .gh-banner { min-height: 300px; }
-    .gh-banner__title { font-size: 1.8rem; }
-    
-    .gh-card-grid--3-cols,
-    .gh-card-grid--4-cols { 
-        grid-template-columns: 1fr; /* Coluna única no mobile */
+    .gh-hero {
+        padding: 80px 20px 100px;
     }
-    
-    .gh-footer__content { flex-direction: column; text-align: center; }
-    .gh-footer__col { text-align: center; }
+
+    .gh-hero__title {
+        font-size: 2.2rem;
+    }
+
+    .gh-hero__subtitle {
+        font-size: 1.2rem;
+    }
+
+    .gh-heading {
+        font-size: 2rem;
+    }
+
+    .gh-section {
+        padding: 50px 20px;
+    }
+
+    .gh-banner {
+        min-height: 300px;
+    }
+
+    .gh-banner__title {
+        font-size: 1.8rem;
+    }
+
+    .gh-card-grid--3-cols,
+    .gh-card-grid--4-cols {
+        grid-template-columns: 1fr;
+        /* Coluna única no mobile */
+    }
+
+    .gh-footer__content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .gh-footer__col {
+        text-align: center;
+    }
 }
