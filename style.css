@@ -1015,8 +1015,8 @@ g
     }
 
     .gh-banner {
-        min-height: 4000px;
-        padding: 200px 0px;
+        min-height: 40px;
+        padding: 20px 0px;
     }
 
     .gh-banner__title {
