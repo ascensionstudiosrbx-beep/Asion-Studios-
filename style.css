@@ -1015,7 +1015,8 @@ g
     }
 
     .gh-banner {
-        min-height: 300px;
+        min-height: 4000px;
+        padding: 200px 0px;
     }
 
     .gh-banner__title {
@@ -1035,5 +1036,9 @@ g
 
     .gh-footer__col {
         text-align: center;
+    }
+
+    .gh-button {
+        padding: 10px 20px;
     }
 }
