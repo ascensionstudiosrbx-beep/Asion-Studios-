@@ -1015,12 +1015,28 @@ g
     }
 
     .gh-banner {
-        min-height: 40px;
-        padding: 20px 0px;
+        /* 1. Define uma altura mínima fixa para garantir que a imagem apareça */
+        min-height: 300px; 
+
+        aspect-ratio: 4 / 3; /* No mobile, vira um retângulo mais alto/quadrado */
+        
+        /* 2. Garante que a imagem cubra o espaço sem distorcer */
+        background-size: cover;
+        background-position: center;
+        
+        /* 3. Ajusta o padding: mais nas laterais para o texto não colar na borda */
+        padding: 40px 25px;
+        
+        /* 4. Centraliza o conteúdo verticalmente */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start; /* Alinha o texto à esquerda ou center se preferir */
     }
 
     .gh-banner__title {
-        font-size: 1.8rem;
+        font-size: 1.6rem; /* Diminui um pouco o título para não quebrar muito */
+        margin-bottom: 10px;
     }
 
     .gh-card-grid--3-cols,
